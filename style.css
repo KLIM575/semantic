@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 86px;
+  font-weight: 600;
+  line-height: 120%;
+  color: #000;
+}
+.header-menu {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+.header-menu ul {
+  list-style-type: none;
+}
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: 86px;
+  font-weight: 500;
+  line-height: 120%;
+  color: #000;
+}
+.hero-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.vertical-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.skills-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.quote {
+  font-family: "Bitter", serif;
+  font-size: 26px;
+  font-weight: 400;
+}
+.horizontal-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.human-card {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.vertical-block {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.opinion-text {
+  font-family: "Bitter", serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+.hero-list {
+  font-family: "Bitter", serif;
+  font-size: 34px;
+  font-weight: 400;
+}
+.hero-list ul {
+  list-style-type: none;
+}
+footer {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer b {
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: white;
+  font-size: 24px;
+}
+.footer-title {
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: white;
+  font-weight: 500;
+}
+footer a {
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: rgb(255, 255, 255);
+}
+.footer-year {
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: white;
+}
