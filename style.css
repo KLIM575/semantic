@@ -64,6 +64,7 @@ header {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 700;
+  transform: rotate(-90deg);
 }
 .skills-text {
   font-family: "Roboto", sans-serif;
@@ -81,6 +82,11 @@ header {
   font-weight: 700;
 }
 .human-card {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.human-card2 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -130,4 +136,100 @@ footer a {
   text-decoration: underline;
   text-decoration-color: rgb(255, 255, 255);
   color: white;
+}
+/* стили для биографи секции */
+.biography {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 137px;
+  padding-right: 137px;
+  margin-top: 151px;
+}
+.biography img {
+  width: 571px;
+  height: 840px;
+}
+.biography-about {
+  display: flex;
+  flex-direction: column;
+  margin-left: 87px;
+  max-width: 455px;
+  align-items: baseline;
+  text-align: left;
+}
+.designers {
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  margin-top: 300px;
+}
+.horizontal-text {
+  position: relative;
+  bottom: 180px;
+  left: 139px;
+}
+.human-card2 {
+  position: relative;
+  bottom: 100px;
+}
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 150px;
+}
+.opinion-text {
+  flex-direction: column;
+  justify-content: center;
+}
+.vertical-block {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 230px;
+  justify-content: flex-start;
+  position: relative;
+  bottom: 110px;
+}
+.block-item {
+  display: flex;
+  flex-direction: column;
+}
+.block-item b {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+.block-item a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  width: 400;
+}
+.cafe-img {
+  width: 451px;
+  height: 760px;
+}
+.book {
+  margin-top: 500px;
+}
+.testimonials-span {
+  position: relative;
+  bottom: 670px;
+}
+.opinion-text {
+  width: 221px;
+  text-align: center;
+}
+.opinion-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40.5px;
+  margin-left: 91px;
 }
