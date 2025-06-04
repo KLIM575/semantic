@@ -174,14 +174,15 @@ footer a {
   bottom: 100px;
 }
 .testimonials {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 10% 30% 20% 30%;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 8px;
+  padding-right: 15%;
+  padding-left: 15%;
 }
 .opinion-text {
-  flex-direction: column;
-  justify-content: center;
 }
 .vertical-block {
   display: flex;
@@ -190,7 +191,7 @@ footer a {
   gap: 230px;
   justify-content: flex-start;
   position: relative;
-  bottom: 110px;
+  bottom: -10%;
 }
 .block-item {
   display: flex;
@@ -210,16 +211,18 @@ footer a {
   width: 400;
 }
 .cafe-img {
-  width: 451px;
-  height: 760px;
+  width: 120%;
+  height: auto;
 }
 .book {
   margin-top: 500px;
 }
 .testimonials-span {
   position: relative;
-  bottom: 670px;
+  left: 135%;
+  bottom: 400px;
 }
+
 .opinion-text {
   width: 221px;
   text-align: center;
