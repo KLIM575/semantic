@@ -147,6 +147,11 @@ footer a {
   padding-right: 5%;
   margin-top: 151px;
 }
+.biography-span {
+  position: relative;
+  margin-bottom: 60%;
+  margin-left: 2%;
+}
 .biography img {
   width: 45%;
   height: auto;
@@ -194,6 +199,7 @@ footer a {
   /* position: relative;
   bottom: -10%; */
 }
+
 .block-item {
   display: flex;
   flex-direction: column;
