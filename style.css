@@ -1,9 +1,48 @@
+/* Reset и глобальные стили */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Шапка */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 86px;
+  font-weight: 600;
+  line-height: 120%;
+  color: #000;
+}
+
+.header-menu {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.header-menu ul {
+  display: flex;
+  gap: 55px;
+  list-style-type: none;
+}
+
+.header-menu ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header-menu ul li :hover {
+  text-decoration: underline;
+}
+
+/* Герой-секция */
 .hero {
   margin: auto;
   display: flex;
@@ -13,6 +52,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .hero-inner {
   display: flex;
   justify-content: center;
@@ -22,140 +62,68 @@ header {
   height: 360px;
   flex-direction: column;
 }
-.logo {
-  font-family: "Playfair Display", serif;
-  font-size: 86px;
-  font-weight: 600;
-  line-height: 120%;
-  color: #000;
-}
-.header-menu {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-}
-.header-menu ul {
-  display: flex;
-  gap: 55px;
 
-  list-style-type: none;
-}
-.header-menu ul li a {
-  text-decoration: none;
-  color: #000;
-}
-.header-menu ul li :hover {
-  text-decoration: underline;
-}
-.hero-title {
+.hero-title,
+.hero-title2 {
   font-family: "Playfair Display", serif;
   font-size: 86px;
   font-weight: 500;
   line-height: 120%;
   color: #000;
 }
+
+.hero-title2 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  position: relative;
+}
+
 .hero-subtitle {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
 }
-.vertical-text {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  writing-mode: sideways-lr;
-  /* transform: rotate(360deg); */
-}
-.skills-text {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-}
-.quote {
-  font-family: "Bitter", serif;
-  font-size: 26px;
-  font-weight: 400;
-}
-.horizontal-text {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-}
-.human-card {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-}
-.human-card2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-}
-.vertical-block {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-}
-.opinion-text {
-  font-family: "Bitter", serif;
-  font-size: 32px;
-  font-weight: 400;
-}
+
 .hero-list {
   font-family: "Bitter", serif;
   font-size: 34px;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 100px;
+  right: 20px;
 }
+
 .hero-list ul {
   list-style-type: none;
+  position: relative;
+  bottom: 65px;
 }
-footer {
-  font-family: "Roboto", sans-serif;
-  background-color: black;
-  font-size: 16px;
-  font-weight: 400;
-}
-footer b {
-  text-decoration: underline;
-  text-decoration-color: white;
-  color: white;
-  font-size: 24px;
-}
-.footer-title {
-  text-decoration: underline;
-  text-decoration-color: white;
-  color: white;
-  font-weight: 500;
-}
-footer a {
-  text-decoration: underline;
-  text-decoration-color: white;
-  color: rgb(255, 255, 255);
-}
-.footer-year {
-  text-decoration: underline;
-  text-decoration-color: rgb(255, 255, 255);
-  color: white;
-}
-/* стили для биографи секции */
+
+/* Биография */
 .biography {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 0 5%;
   margin-top: 151px;
 }
+
 .biography-span {
   position: relative;
   margin-bottom: 60%;
   margin-left: 2%;
 }
+
 .biography img {
   width: 45%;
   height: auto;
 }
+
 .biography-about {
   display: flex;
   flex-direction: column;
@@ -164,76 +132,91 @@ footer a {
   align-items: baseline;
   text-align: left;
 }
+
+/* Дизайнеры */
 .designers {
   display: flex;
-  justify-content: flex-start;
-  align-content: space-between;
-  margin-top: 300px;
-}
-.horizontal-text {
-  position: relative;
-  bottom: 180px;
-  left: 139px;
-}
-.human-card2 {
-  position: relative;
-  bottom: 100px;
-}
-.testimonials {
-  display: grid;
-  grid-template-columns: 10% 35% 10% 30%;
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 8px;
-  padding-right: 15%;
-  padding-left: 15%;
-}
-.opinion-text {
-}
-.vertical-block {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  gap: 20%;
-  justify-content: flex-start;
-  /* position: relative;
-  bottom: -10%; */
+  overflow-x: scroll;
+  width: 100%;
+  /* max-width: 1920px; */
 }
 
-.block-item {
+#designers {
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+  position: relative;
+  top: 120px;
+}
+
+.designers-inner {
+  display: flex;
+  width: 1920px;
+  margin-left: 20px;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.designers::-webkit-scrollbar {
+  width: 0;
+}
+
+.human-card,
+.human-card2 {
   display: flex;
   flex-direction: column;
-}
-.block-item b {
   font-family: "Roboto", sans-serif;
-  color: black;
   font-size: 16px;
   font-weight: 700;
 }
-.block-item a {
-  text-decoration: none;
-  color: #000;
+.human-card,
+.human-card2 b {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  width: 400;
+  font-weight: 500;
 }
-.cafe-img {
-  width: 120%;
-  height: auto;
+.human-card2-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
 }
-.book {
-  margin-top: 500px;
+.card2-inner-text {
+  margin-right: 40px;
+  margin-top: 20px;
 }
+.human-card > b {
+  margin-top: 20px;
+}
+.card2-b {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.card2-p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Отзывы */
+.testimonials {
+  display: grid;
+  grid-template-columns: 10% 35% 10% 30%;
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 8px;
+  padding: 0 15%;
+  position: relative;
+  top: 250px;
+}
+
 .testimonials-span {
   position: relative;
   bottom: 85%;
   left: 70%;
 }
 
-.opinion-text {
-  width: 221px;
-  text-align: center;
-}
 .opinion-block {
   display: flex;
   flex-direction: column;
@@ -242,23 +225,131 @@ footer a {
   padding-bottom: 40.5px;
   margin-left: 91px;
 }
+
 .opinion-block img {
   width: 90%;
   height: 50%;
 }
-.images {
+
+.opinion-text {
+  font-family: "Bitter", serif;
+  font-size: 32px;
+  font-weight: 400;
+  width: 221px;
+  text-align: center;
 }
+
+/* Текстовые стили */
+.vertical-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  writing-mode: sideways-lr;
+}
+
+.horizontal-text,
+.horizontal-text2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.horizontal-text {
+  position: relative;
+  bottom: 55px;
+  left: 250px;
+}
+
+.horizontal-text2 {
+  margin-left: 15%;
+  position: relative;
+  top: -5px;
+  right: 2%;
+}
+
+.skills-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.quote {
+  font-family: "Bitter", serif;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+/* Вертикальный блок */
+.vertical-block {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 20%;
+  justify-content: flex-start;
+}
+
+.block-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-item b {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.block-item a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  width: 400;
+}
+
+.cafe-img {
+  width: 120%;
+  height: auto;
+}
+
+/* Подвал */
+footer {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer b,
+.footer-title,
+footer a,
+.footer-year {
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: white;
+}
+
+footer b {
+  font-size: 24px;
+}
+
+.footer-title {
+  font-weight: 500;
+}
+
+/* Дополнительные элементы */
 .list {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: repeat(5, 20%);
   grid-template-rows: 3fr;
-  grid-column-start: 6;
-  grid-column-end: ;
-  grid-row-start: ;
-  grid-row-end: -1;
+  gap: 20px;
 }
-.hero-title2 {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  position: relative;
+
+.book {
+  margin-top: 350px;
+  overflow-x: auto;
 }
