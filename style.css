@@ -1,7 +1,30 @@
-/* Reset и глобальные стили */
+@-moz-viewport {
+  width: device-width;
+  scale: 1;
+}
+@-ms-viewport {
+  width: device-width;
+  scale: 1;
+}
+@-o-viewport {
+  width: device-width;
+  scale: 1;
+}
+@-webkit-viewport {
+  width: device-width;
+  scale: 1;
+}
+@viewport {
+  width: device-width;
+  scale: 1;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
@@ -72,35 +95,10 @@ header {
   color: #000;
 }
 
-.hero-title2 {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  position: relative;
-}
-
 .hero-subtitle {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
-}
-
-.hero-list {
-  font-family: "Bitter", serif;
-  font-size: 34px;
-  font-weight: 400;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* position: relative; */
-  bottom: 100px;
-  right: 20px;
-}
-
-.hero-list ul {
-  list-style-type: none;
-  position: relative;
-  bottom: 65px;
 }
 
 /* Биография */
@@ -247,8 +245,7 @@ header {
   writing-mode: sideways-lr;
 }
 
-.horizontal-text,
-.horizontal-text2 {
+.horizontal-text {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -258,13 +255,6 @@ header {
   position: relative;
   bottom: 55px;
   left: 250px;
-}
-
-.horizontal-text2 {
-  margin-left: 15%;
-  position: relative;
-  top: -5px;
-  right: 2%;
 }
 
 .skills-text {
@@ -341,15 +331,111 @@ footer b {
   font-weight: 500;
 }
 
-/* Дополнительные элементы */
-.list {
-  display: grid;
-  grid-template-columns: repeat(5, 20%);
-  grid-template-rows: 3fr;
-  gap: 20px;
+.strong-points {
+  height: 613px;
+  max-width: 1420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 320px;
 }
 
-.book {
-  margin-top: 450px;
-  overflow-x: auto;
+.strong-points img {
+  width: 335px;
+  height: 554px;
+  max-width: 100%;
+}
+
+.strong-points-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.strong-points-inner::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.strong-points-list {
+  width: 451px;
+  height: 554px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding-left: 56px;
+  padding-right: 56px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.strong-points-title {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 20px;
+  margin-left: 16.7%;
+}
+
+.strong-points-list ul {
+  list-style-type: none;
+  font-family: "Bitter", Georgia, serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  width: 216px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: auto;
+  gap: 8px;
+}
+
+.strong-points-strengths {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: 86px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: bottom;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .strong-points-inner {
+    overflow-x: auto;
+  }
 }
