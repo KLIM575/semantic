@@ -154,13 +154,14 @@ header {
   display: flex;
   overflow-x: scroll;
   width: 100%;
-  /* max-width: 1920px; */
+  margin-left: 0cm;
 }
 
 #designers {
-  display: flex;
+  max-width: 1471px;
   justify-content: flex-start;
   margin: auto;
+  padding: 0%;
   position: relative;
   top: 120px;
 }
@@ -198,7 +199,7 @@ header {
   width: 100%;
 }
 .card2-inner-text {
-  margin-right: 40px;
+  margin-right: 70px;
   margin-top: 20px;
 }
 .human-card > b {
@@ -295,7 +296,7 @@ header {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  gap: 20%;
+  gap: 18%;
   justify-content: flex-start;
 }
 
@@ -334,10 +335,18 @@ footer {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  gap: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  height: 168px;
-  margin-top: 150px;
+  margin-top: 90px;
+}
+.footer-desktop {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 footer address {
   display: flex;
@@ -489,6 +498,73 @@ footer address a {
   letter-spacing: 0%;
   vertical-align: bottom;
 }
+/*testimonials-mobile*/
+.testimonials-mobile {
+  display: none;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.testimonials-mobile__opinion-text {
+  font-family: "Bitter", serif;
+  font-size: 32px;
+  font-weight: 400;
+  width: 65%;
+  text-align: center;
+}
+.testimonials-mobile__inner {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.testimonials-mobile__img {
+  width: 600px;
+  height: 250px;
+  background-image: url("/assets/images/s3p2-2.jpg");
+  background-size: cover;
+}
+.testimonials__span {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.testimonials-text-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 28px;
+}
+.testimonials-mobile__vertical-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+.testimonials-mobile__block-item a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.testimonials-mobile__block-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer-mobile {
+  display: none;
+}
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .strong-points-inner {
@@ -523,6 +599,27 @@ footer address a {
   .hero-title {
     font-size: 70px;
     white-space: nowrap;
+  }
+  .testimonials-mobile__inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .testimonials-mobile__opinion-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .testimonials-mobile__img {
+    height: 414px;
+    width: 90%;
+  }
+  .testimonials-mobile__vertical-block {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .testimonials-mobile__opinion-text {
+    margin-bottom: 24px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -590,6 +687,28 @@ footer address a {
     height: 400px;
     object-fit: cover;
   }
+  #designers {
+    margin: 0;
+    padding: 0;
+  }
+  .strong-points {
+    position: relative;
+    top: -200px;
+  }
+  .human-card2 img {
+    width: 310px;
+    height: 438px;
+    object-fit: cover;
+  }
+  .human-card img {
+    width: 310px;
+    height: 438px;
+    object-fit: cover;
+  }
+  .horizontal-text {
+    left: 16px;
+    font-size: 18px;
+  }
   .desktop-menu {
     display: none;
   }
@@ -632,5 +751,44 @@ footer address a {
   .hero-mobile {
     display: block;
     background-size: cover;
+  }
+  .testimonials {
+    display: none;
+  }
+  .testimonials-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+  }
+  .footer-mobile {
+    display: flex;
+  }
+  .footer-desktop {
+    display: none;
+  }
+  .footer-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-title {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 70px;
+  }
+  .footer-info {
+    width: 80%;
+    height: 45px;
+    margin-top: 36px;
+  }
+}
+@media (min-width: 1054px) and (max-width: 1600px) {
+  .vertical-block {
+    gap: 70px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1070px) {
+  .vertical-block {
+    gap: 40px;
   }
 }
