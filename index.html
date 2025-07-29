@@ -10,12 +10,34 @@
     <header>
       <span class="logo">Mod</span>
       <nav class="header-menu">
-        <ul>
+        <ul class="menu-mobile">
+          <li><a href="#biography">B</a></li>
+          <li><a href="#designers">D</a></li>
+          <li><a href="#testimonials">T</a></li>
+          <li><a class="s" href="#points">S</a></li>
+        </ul>
+        <ul class="desktop-menu">
           <li><a href="#biography">Biography</a></li>
           <li><a href="#designers">Designers</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#points">Strong points</a></li>
         </ul>
+        <li class="message-icon">
+          <svg
+            width="51"
+            height="50"
+            viewBox="0 0 51 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.5743 40C11.4669 40 11.252 40 11.1446 39.8889C10.7149 39.6667 10.5 39.3333 10.5 38.8889V20C10.5 14.4444 14.7972 10 20.1686 10H30.9116C36.283 10 40.5802 14.4444 40.5802 20V24.4444C40.5802 30 36.283 34.4444 30.9116 34.4444H25.8624C20.9206 34.4444 16.0863 36.3333 12.3263 39.7778C12.1114 39.8889 11.7892 40 11.5743 40ZM25.8624 32.9444C20.8352 32.9444 15.925 34.7581 12 38.0679V20C12 15.2248 15.6728 11.5 20.1686 11.5H30.9116C35.4074 11.5 39.0802 15.2248 39.0802 20V24.4444C39.0802 29.2196 35.4074 32.9444 30.9116 32.9444H25.8624ZM21.5294 23.2353C22.2604 23.2353 22.8529 22.6427 22.8529 21.9118C22.8529 21.1808 22.2604 20.5882 21.5294 20.5882C20.7984 20.5882 20.2059 21.1808 20.2059 21.9118C20.2059 22.6427 20.7984 23.2353 21.5294 23.2353ZM27.2647 21.9118C27.2647 22.6427 26.6721 23.2353 25.9412 23.2353C25.2102 23.2353 24.6176 22.6427 24.6176 21.9118C24.6176 21.1808 25.2102 20.5882 25.9412 20.5882C26.6721 20.5882 27.2647 21.1808 27.2647 21.9118ZM30.3529 23.2353C31.0839 23.2353 31.6765 22.6427 31.6765 21.9118C31.6765 21.1808 31.0839 20.5882 30.3529 20.5882C29.622 20.5882 29.0294 21.1808 29.0294 21.9118C29.0294 22.6427 29.622 23.2353 30.3529 23.2353Z"
+              fill="black"
+            />
+          </svg>
+        </li>
       </nav>
     </header>
     <main>
@@ -25,6 +47,7 @@
           <h1 class="hero-title">Mod Studio</h1>
           <h2 class="hero-subtitle">Modern Web studio</h2>
         </div>
+        <div class="hero-mobile"></div>
       </section>
       <section id="biography" class="biography">
         <img src="/assets/images/ss1.jpg" alt="kate mills" />
@@ -40,6 +63,30 @@
             something that is personal, the more successful it is.”
           </blockquote>
         </div>
+      </section>
+      <section class="biography-mobile">
+        <div class="biography-mobile-top">
+          <div>
+            <ul>
+              <b>Art Director</b>
+              <li>-Scenography</li>
+              <li>-Styling</li>
+              <li>-Creative Photography</li>
+              <li>-Design</li>
+            </ul>
+          </div>
+          <h3 class="biography-mobile-title">Biography</h3>
+        </div>
+        <p class="biography-mobile-text">
+          “The more I deal with the work as something that is my own, as
+          something that is personal, the more successful it is.”
+        </p>
+        <h3 class="biography-mobile-name">-Katya Mills</h3>
+        <img
+          class="biography-mobile-img"
+          src="/assets/images/ss1.jpg"
+          alt="kate mills"
+        />
       </section>
       <section id="designers">
         <span class="horizontal-text">Designers</span>
@@ -81,6 +128,7 @@
           </div>
         </div>
       </section>
+
       <section id="testimonials" class="testimonials">
         <div class="vertical-block">
           <div class="vertical-text block-item">
@@ -105,13 +153,42 @@
           <img src="/assets/images/s3p2.png" alt="bag" />
         </div>
       </section>
-      <section id="points" class="book">
-        <span class="horizontal-text2">Strong points</span>
-        <div class="list">
+
+      <section class="testimonials-mobile">
+        <div class="testimonials-text-container">
+          <span class="testimonials__span">Testimonials</span>
+        </div>
+        <div class="testimonials-mobile__inner">
+          <div class="testimonials-mobile__opinion-block">
+            <blockquote class="testimonials-mobile__opinion-text">
+              I just really want to do good work, and work with some great
+              people, people who challenge me.
+            </blockquote>
+          </div>
+          <div class="testimonials-mobile__img"></div>
+        </div>
+        <div class="testimonials-mobile__vertical-block">
+          <div class="testimonials-mobile__block-item">
+            <b>Creativity</b
+            ><a href="www.whitepapers.com">www.whitepapers.com</a>
+          </div>
+          <div class="testimonials-mobile__block-item">
+            <b>Creativity</b
+            ><a href="www.whitepapers.com">www.whitepapers.com</a>
+          </div>
+          <div class="testimonials-mobile__block-item">
+            <b>Website</b><a href="www.whitepapers.com">www.whitepapers.com</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="strong-points">
+        <span class="strong-points-title">Strong points</span>
+        <div class="strong-points-inner">
           <img src="/assets/images/s4p1.png" alt="table" />
           <img src="/assets/images/s4p2.png" alt="armchair" />
-          <div class="hero-list">
-            <h3 class="hero-title2">Strengths</h3>
+          <div class="strong-points-list">
+            <h3 class="strong-points-strengths">Strengths</h3>
             <ul>
               <li>Interiors</li>
               <li>Outdoors</li>
@@ -125,17 +202,27 @@
               <li>Nature</li>
             </ul>
           </div>
-          <img src="/assets/images/s4p4.png" alt="cafe" />
-          <img src="/assets/images/s4p3.png" alt="armchair" />
+          <img src="/assets/images/s4p4.png" alt="armchair" />
         </div>
       </section>
     </main>
     <footer>
-      <address>
-        <a href="#">+7 921 123-45-67</a><a href="#">info@modstudio.com</a>
-      </address>
-      <p class="footer-title">A product of <b>MOD</b></p>
-      <p class="footer-year">© 2023 Mod Media. All rights reserved</p>
+      <div class="footer-desktop">
+        <address>
+          <a href="#">+7 921 123-45-67</a><a href="#">info@modstudio.com</a>
+        </address>
+        <p class="footer-title">A product of <b>MOD</b></p>
+        <p class="footer-year">© 2023 Mod Media. All rights reserved</p>
+      </div>
+      <div class="footer-mobile">
+        <div class="footer-info">
+          <address>
+            <a href="#">+7 921 123-45-67</a><a href="#">info@modstudio.com</a>
+          </address>
+          <p class="footer-year">© 2023 Mod Media. All rights reserved</p>
+        </div>
+        <p class="footer-title">A product of <b>MOD</b></p>
+      </div>
     </footer>
   </body>
 </html>
