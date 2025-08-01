@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Mod</title>
   </head>
   <body>
-    <header>
-      <span class="logo">Mod</span>
-      <nav class="header-menu">
-        <ul class="menu-mobile">
-          <li><a href="#biography">B</a></li>
-          <li><a href="#designers">D</a></li>
-          <li><a href="#testimonials">T</a></li>
-          <li><a class="s" href="#points">S</a></li>
+    <header class="header">
+      <span class="header__logo">Mod</span>
+      <nav class="header__nav">
+        <ul class="header__menu header__menu--mobile">
+          <li class="header__menu-item"><a href="#biography">B</a></li>
+          <li class="header__menu-item"><a href="#designers">D</a></li>
+          <li class="header__menu-item"><a href="#testimonials">T</a></li>
+          <li class="header__menu-item"><a class="header__menu-link--s" href="#points">S</a></li>
         </ul>
-        <ul class="desktop-menu">
-          <li><a href="#biography">Biography</a></li>
-          <li><a href="#designers">Designers</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#points">Strong points</a></li>
+        <ul class="header__menu header__menu--desktop">
+          <li class="header__menu-item"><a href="#biography">Biography</a></li>
+          <li class="header__menu-item"><a href="#designers">Designers</a></li>
+          <li class="header__menu-item"><a href="#testimonials">Testimonials</a></li>
+          <li class="header__menu-item"><a href="#points">Strong points</a></li>
         </ul>
-        <li class="message-icon">
+        <li class="header__message-icon">
           <svg
             width="51"
             height="50"
@@ -40,123 +40,121 @@
         </li>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <section class="hero">
-        <div class="hero-inner">
-          <!--хиро иннер значит внутренний блок хироу -->
-          <h1 class="hero-title">Mod Studio</h1>
-          <h2 class="hero-subtitle">Modern Web studio</h2>
+        <div class="hero__inner">
+          <h1 class="hero__title">Mod Studio</h1>
+          <h2 class="hero__subtitle">Modern Web studio</h2>
         </div>
-        <div class="hero-mobile"></div>
+        <div class="hero__mobile"></div>
       </section>
       <section id="biography" class="biography">
-        <img src="/assets/images/ss1.jpg" alt="kate mills" />
-        <span class="vertical-text biography-span">Biography</span>
-        <div class="biography-about">
-          <h2 class="hero-title">Katya Mills</h2>
-          <p class="skills-text">Art Director</p>
-          <p class="skills-text">
+        <img src="./assets/images/ss1.jpg" alt="kate mills" class="biography__image" />
+        <span class="biography__vertical-text">Biography</span>
+        <div class="biography__about">
+          <h2 class="biography__title">Katya Mills</h2>
+          <p class="biography__skills">Art Director</p>
+          <p class="biography__skills">
             Scenography / Styling / Creative Photography / Design
           </p>
-          <blockquote class="quote">
+          <blockquote class="biography__quote">
             “The more I deal with the work as something that is my own, as
             something that is personal, the more successful it is.”
           </blockquote>
         </div>
       </section>
       <section class="biography-mobile">
-        <div class="biography-mobile-top">
-          <div>
-            <ul>
-              <b>Art Director</b>
-              <li>-Scenography</li>
-              <li>-Styling</li>
-              <li>-Creative Photography</li>
-              <li>-Design</li>
+        <div class="biography-mobile__top">
+          <div class="biography-mobile__skills">
+            <ul class="biography-mobile__skills-list">
+              <b class="biography-mobile__skills-title">Art Director</b>
+              <li class="biography-mobile__skills-item">-Scenography</li>
+              <li class="biography-mobile__skills-item">-Styling</li>
+              <li class="biography-mobile__skills-item">-Creative Photography</li>
+              <li class="biography-mobile__skills-item">-Design</li>
             </ul>
           </div>
-          <h3 class="biography-mobile-title">Biography</h3>
+          <h3 class="biography-mobile__title">Biography</h3>
         </div>
-        <p class="biography-mobile-text">
+        <p class="biography-mobile__text">
           “The more I deal with the work as something that is my own, as
           something that is personal, the more successful it is.”
         </p>
-        <h3 class="biography-mobile-name">-Katya Mills</h3>
+        <h3 class="biography-mobile__name">-Katya Mills</h3>
         <img
-          class="biography-mobile-img"
-          src="/assets/images/ss1.jpg"
+          class="biography-mobile__image"
+          src="./assets/images/ss1.jpg"
           alt="kate mills"
         />
       </section>
-      <section id="designers">
-        <span class="horizontal-text">Designers</span>
+      <section id="designers" class="designers-section">
+        <span class="designers-section__horizontal-text">Designers</span>
         <div class="designers">
-          <div class="designers-inner">
-            <div class="human-card2">
-              <img src="/assets/images/s2p1.png" alt="girl in the field" />
-              <div class="human-card2-text">
-                <div class="card2-inner-text">
-                  <strong class="card2-b">JESS WONDER</strong>
-                  <p class="card2-p">
-                    <strong class="card2-b">From/</strong>Be more flower
+          <div class="designers__inner">
+            <div class="designers__card designers__card--type2">
+              <img src="./assets/images/s2p1.png" alt="girl in the field" class="designers__image" />
+              <div class="designers__card-text">
+                <div class="designers__card-inner">
+                  <strong class="designers__name">JESS WONDER</strong>
+                  <p class="designers__info">
+                    <strong class="designers__label">From/</strong>Be more flower
                   </p>
-                  <p class="card2-p">
-                    <strong class="card2-b">Skills/</strong>Design Strategy /
-                    Marketing
+                  <p class="designers__info">
+                    <strong class="designers__label">Skills/</strong>Design Strategy / Marketing
                   </p>
                 </div>
               </div>
             </div>
-            <div class="human-card">
-              <img src="/assets/images/s2p2.png" alt="bag" />
-              <b>KAMERON CLEIN</b>
-              <p><b>From/</b>Be more flower</p>
-              <p><b>Skills/</b>Design Strategy / Marketing</p>
+            <div class="designers__card">
+              <img src="./assets/images/s2p2.png" alt="bag" class="designers__image" />
+              <strong class="designers__name">KAMERON CLEIN</strong>
+              <p class="designers__info"><strong class="designers__label">From/</strong>Be more flower</p>
+              <p class="designers__info"><strong class="designers__label">Skills/</strong>Design Strategy / Marketing</p>
             </div>
-            <div class="human-card">
-              <img src="/assets/images/s2p3.png" alt="book" />
-              <b>LOISSE RED</b>
-              <p><b>From/</b>Be more flower</p>
-              <p><b>Skills/</b>Design Strategy / Marketing</p>
+            <div class="designers__card">
+              <img src="./assets/images/s2p3.png" alt="book" class="designers__image" />
+              <strong class="designers__name">LOISSE RED</strong>
+              <p class="designers__info"><strong class="designers__label">From/</strong>Be more flower</p>
+              <p class="designers__info"><strong class="designers__label">Skills/</strong>Design Strategy / Marketing</p>
             </div>
-            <div class="human-card">
-              <img src="/assets/images/s2p4.png" alt="bag" />
-              <b>KAMERON CLEIN</b>
-              <p><b>From/</b>Be more flower</p>
-              <p><b>Skills/</b>Design Strategy / Marketing</p>
+            <div class="designers__card">
+              <img src="./assets/images/s2p4.png" alt="bag" class="designers__image" />
+              <strong class="designers__name">KAMERON CLEIN</strong>
+              <p class="designers__info"><strong class="designers__label">From/</strong>Be more flower</p>
+              <p class="designers__info"><strong class="designers__label">Skills/</strong>Design Strategy / Marketing</p>
             </div>
           </div>
         </div>
       </section>
 
       <section id="testimonials" class="testimonials">
-        <div class="vertical-block">
-          <div class="vertical-text block-item">
-            <b>Creativity</b
-            ><a href="www.whitepapers.com">www.whitepapers.com</a>
+        <div class="testimonials__vertical-block">
+          <div class="testimonials__block-item">
+            <b class="testimonials__label">Creativity</b
+            ><a href="www.whitepapers.com" class="testimonials__link">www.whitepapers.com</a>
           </div>
-          <div class="vertical-text block-item">
-            <b>Creativity</b
-            ><a href="www.whitepapers.com">www.whitepapers.com</a>
+          <div class="testimonials__block-item">
+            <b class="testimonials__label">Creativity</b
+            ><a href="www.whitepapers.com" class="testimonials__link">www.whitepapers.com</a>
           </div>
-          <div class="vertical-text block-item">
-            <b>Website</b><a href="www.whitepapers.com">www.whitepapers.com</a>
+          <div class="testimonials__block-item">
+            <b class="testimonials__label">Website</b><a href="www.whitepapers.com" class="testimonials__link">www.whitepapers.com</a>
           </div>
         </div>
-        <img src="/assets/images/s3p1.png" alt="cafe" class="cafe-img" />
-        <span class="vertical-text testimonials-span">Testimonials</span>
-        <div class="opinion-block">
-          <blockquote class="opinion-text">
+        <img src="./assets/images/s3p1.png" alt="cafe" class="testimonials__cafe-image" />
+        <span class="testimonials__vertical-text">Testimonials</span>
+        <div class="testimonials__opinion-block">
+          <blockquote class="testimonials__opinion-text">
             I just really want to do good work, and work with some great people,
             people who challenge me.
           </blockquote>
-          <img src="/assets/images/s3p2.png" alt="bag" />
+          <img src="./assets/images/s3p2.png" alt="bag" class="testimonials__opinion-image" />
         </div>
       </section>
 
       <section class="testimonials-mobile">
-        <div class="testimonials-text-container">
-          <span class="testimonials__span">Testimonials</span>
+        <div class="testimonials-mobile__text-container">
+          <span class="testimonials-mobile__span">Testimonials</span>
         </div>
         <div class="testimonials-mobile__inner">
           <div class="testimonials-mobile__opinion-block">
@@ -165,63 +163,63 @@
               people, people who challenge me.
             </blockquote>
           </div>
-          <div class="testimonials-mobile__img"></div>
+          <div class="testimonials-mobile__image"></div>
         </div>
         <div class="testimonials-mobile__vertical-block">
           <div class="testimonials-mobile__block-item">
-            <b>Creativity</b
-            ><a href="www.whitepapers.com">www.whitepapers.com</a>
+            <b class="testimonials-mobile__label">Creativity</b
+            ><a href="www.whitepapers.com" class="testimonials-mobile__link">www.whitepapers.com</a>
           </div>
           <div class="testimonials-mobile__block-item">
-            <b>Creativity</b
-            ><a href="www.whitepapers.com">www.whitepapers.com</a>
+            <b class="testimonials-mobile__label">Creativity</b
+            ><a href="www.whitepapers.com" class="testimonials-mobile__link">www.whitepapers.com</a>
           </div>
           <div class="testimonials-mobile__block-item">
-            <b>Website</b><a href="www.whitepapers.com">www.whitepapers.com</a>
+            <b class="testimonials-mobile__label">Website</b><a href="www.whitepapers.com" class="testimonials-mobile__link">www.whitepapers.com</a>
           </div>
         </div>
       </section>
 
-      <section class="strong-points">
-        <span class="strong-points-title">Strong points</span>
-        <div class="strong-points-inner">
-          <img src="/assets/images/s4p1.png" alt="table" />
-          <img src="/assets/images/s4p2.png" alt="armchair" />
-          <div class="strong-points-list">
-            <h3 class="strong-points-strengths">Strengths</h3>
-            <ul>
-              <li>Interiors</li>
-              <li>Outdoors</li>
-              <li>Portraits</li>
-              <li>Styling</li>
-              <li>Events</li>
-              <li>Architecture</li>
-              <li>Design</li>
-              <li>Celebrations</li>
-              <li>Fashion</li>
-              <li>Nature</li>
+      <section id="points" class="strong-points">
+        <span class="strong-points__title">Strong points</span>
+        <div class="strong-points__inner">
+          <img src="./assets/images/s4p1.png" alt="table" class="strong-points__image" />
+          <img src="./assets/images/s4p2.png" alt="armchair" class="strong-points__image" />
+          <div class="strong-points__list">
+            <h3 class="strong-points__heading">Strengths</h3>
+            <ul class="strong-points__items">
+              <li class="strong-points__item">Interiors</li>
+              <li class="strong-points__item">Outdoors</li>
+              <li class="strong-points__item">Portraits</li>
+              <li class="strong-points__item">Styling</li>
+              <li class="strong-points__item">Events</li>
+              <li class="strong-points__item">Architecture</li>
+              <li class="strong-points__item">Design</li>
+              <li class="strong-points__item">Celebrations</li>
+              <li class="strong-points__item">Fashion</li>
+              <li class="strong-points__item">Nature</li>
             </ul>
           </div>
-          <img src="/assets/images/s4p4.png" alt="armchair" />
+          <img src="./assets/images/s4p4.png" alt="armchair" class="strong-points__image" />
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer-desktop">
-        <address>
-          <a href="#">+7 921 123-45-67</a><a href="#">info@modstudio.com</a>
+    <footer class="footer">
+      <div class="footer__desktop">
+        <address class="footer__contacts">
+          <a href="#" class="footer__link">+7 921 123-45-67</a><a href="#" class="footer__link">info@modstudio.com</a>
         </address>
-        <p class="footer-title">A product of <b>MOD</b></p>
-        <p class="footer-year">© 2023 Mod Media. All rights reserved</p>
+        <p class="footer__title">A product of <b class="footer__title-bold">MOD</b></p>
+        <p class="footer__year">© 2023 Mod Media. All rights reserved</p>
       </div>
-      <div class="footer-mobile">
-        <div class="footer-info">
-          <address>
-            <a href="#">+7 921 123-45-67</a><a href="#">info@modstudio.com</a>
+      <div class="footer__mobile">
+        <div class="footer__info">
+          <address class="footer__contacts">
+            <a href="#" class="footer__link">+7 921 123-45-67</a><a href="#" class="footer__link">info@modstudio.com</a>
           </address>
-          <p class="footer-year">© 2023 Mod Media. All rights reserved</p>
+          <p class="footer__year">© 2023 Mod Media. All rights reserved</p>
         </div>
-        <p class="footer-title">A product of <b>MOD</b></p>
+        <p class="footer__title">A product of <b class="footer__title-bold">MOD</b></p>
       </div>
     </footer>
   </body>
