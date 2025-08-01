@@ -27,6 +27,26 @@
   -moz-box-sizing: border-box;
 }
 
+dialog {
+  width: 383px;
+  height: 602px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+
+.body-no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .header {
   display: flex;
   align-items: center;
