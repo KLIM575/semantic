@@ -40,13 +40,30 @@ $color-accent: #a07c72;
 
 //МОДАЛЬНОЕ ОКНО//
 dialog {
-  width: 383px;
-  height: 602px;
+  width: 442px;
+  height: 589px;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: auto;
+}
+#contact-form {
+}
+.form-group {
+  // width: 402px;
+  // height: 81px;
+  // opacity: 1;
+  // gap: 6px;
+}
+.form-group input {
+  width: 402px;
+  height: 81px;
+}
+.form-actions {
+  display: flex;
+  width: 402px;
+  height: 66px;
 }
 .body-no-scroll {
   overflow: hidden;
