@@ -47,54 +47,73 @@
           </svg>
         </li>
       </nav>
+
       <dialog id="myDialog">
-        <form id="contact-form" method="post" action="/submit-form">
+        <div class="button__conteiner">
+          <button class="close__dialog" id="closeDialog">&#x2717;</button>
+        </div>
+
+        <form
+          class="form"
+          id="contact-form"
+          method="post"
+          action="/submit-form"
+        >
           <fieldset class="contact">
-            <legend>Контактная информация</legend>
+            <legend class="contact__legend">Get in touch</legend>
+            <p class="contact__desc">
+              Do you have any questions? Have something to say? <br />
+              Don't be shy, write to us:
+            </p>
 
             <div class="form-group">
-              <label for="name">Имя:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                aria-required="true"
-              />
-              <img src="./assets/images/svs.svg" />
+              <label class="form__label" for="name">Name:</label>
+              <div class="form__input">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  aria-required="true"
+                />
+                <img class="icon__img" src="./assets/images/svs.svg" />
+              </div>
             </div>
 
             <div class="form-group">
-              <label for="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                aria-required="true"
-              />
-              <i class="fa-solid fa-at"></i>
+              <label class="form__label" for="email">Email:</label>
+              <div class="form__input">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  aria-required="true"
+                />
+                <img class="icon__img" src="./assets/images/icon mail.svg" />
+              </div>
             </div>
 
             <div class="form-group">
-              <label for="comment">Комментарий:</label>
-              <textarea
-                id="comment"
-                name="comment"
-                rows="4"
-                required
-                aria-required="true"
-              ></textarea>
-              <img src="./assets/images/massege.svg" />
+              <label class="form__label" for="comment">Comment:</label>
+              <div class="form__input">
+                <textarea
+                  id="comment"
+                  name="comment"
+                  rows="4"
+                  required
+                  aria-required="true"
+                ></textarea>
+                <img class="icon__img" src="./assets/images/massege.svg" />
+              </div>
             </div>
           </fieldset>
 
           <div class="form-actions">
-            <button type="submit" class="btn-submit">Отправить</button>
-            <button type="reset" class="btn-cancel">Отмена</button>
+            <button type="submit" class="btn-submit">Cancel</button>
+            <button type="reset" class="btn-cancel">+ Send</button>
           </div>
         </form>
-        <button id="closeDialog">Закрыть</button>
       </dialog>
     </header>
     <main class="main">

@@ -3,7 +3,10 @@ const dialog = document.getElementById("myDialog");
 
 // Открытие диалога
 document.getElementById("openDialog").addEventListener("click", () => {
-  dialog.showModal();
+  if (dialog) {
+    dialog.showModal();
+  }
+
   body.classList.add("body-no-scroll");
 });
 
