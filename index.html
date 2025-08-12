@@ -49,6 +49,7 @@
       </nav>
 
       <dialog id="myDialog">
+        <div class="decoration"></div>
         <div class="button__conteiner">
           <button class="close__dialog" id="closeDialog">&#x2717;</button>
         </div>
@@ -73,6 +74,7 @@
                   type="text"
                   id="name"
                   name="name"
+                  placeholder="3+ Characters"
                   required
                   aria-required="true"
                 />
@@ -87,6 +89,7 @@
                   type="email"
                   id="email"
                   name="email"
+                  placeholder="name@email.com"
                   required
                   aria-required="true"
                 />
@@ -98,8 +101,10 @@
               <label class="form__label" for="comment">Comment:</label>
               <div class="form__input">
                 <textarea
+                  style="resize: none"
                   id="comment"
                   name="comment"
+                  placeholder="Some text..."
                   rows="4"
                   required
                   aria-required="true"
@@ -110,8 +115,8 @@
           </fieldset>
 
           <div class="form-actions">
-            <button type="submit" class="btn-submit">Cancel</button>
-            <button type="reset" class="btn-cancel">+ Send</button>
+            <button type="reset" class="btn-cancel">Cancel</button>
+            <button type="submit" class="btn-submit">+ Send</button>
           </div>
         </form>
       </dialog>
