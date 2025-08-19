@@ -1030,10 +1030,7 @@ dialog::backdrop {
     overflow-x: auto;
   }
 }
-@media screen and {
-  max-width: 470px;
-}
- {
+@media screen and (max-width: 470px) {
   .decoration {
     width: 92%;
   }
