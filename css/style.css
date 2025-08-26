@@ -1,25 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@-moz-viewport {
-  width: device-width;
-  scale: 1;
-}
-@-ms-viewport {
-  width: device-width;
-  scale: 1;
-}
-@-o-viewport {
-  width: device-width;
-  scale: 1;
-}
-@-webkit-viewport {
-  width: device-width;
-  scale: 1;
-}
-@viewport {
-  width: device-width;
-  scale: 1;
-}
 * {
   margin: 0;
   padding: 0;
@@ -119,17 +99,17 @@ dialog {
   font-weight: 700;
   font-size: 22px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #000000;
 }
 
 .contact__desc {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-style: Regular;
+  font-weight: 400;
   font-size: 16px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -137,10 +117,10 @@ dialog {
 .form__label {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-style: Medium;
+  font-weight: 500;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   margin-bottom: 6px;
   margin-top: 24px;
 }
@@ -168,7 +148,7 @@ dialog {
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 .form-group input:hover {
   background: #ededed;
@@ -199,7 +179,7 @@ dialog {
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 .form-group textarea:hover {
   background: #ededed;
@@ -238,10 +218,10 @@ dialog {
   background: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-style: Medium;
+  font-weight: 500;
   font-size: 18px;
   line-height: 31.68px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
   vertical-align: middle;
 }
@@ -279,10 +259,10 @@ dialog {
   border: 1.32px solid #000000;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-style: Medium;
+  font-weight: 500;
   font-size: 18px;
   line-height: 31.68px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
   vertical-align: middle;
   color: #ffffff;
@@ -378,7 +358,7 @@ dialog::backdrop {
 }
 .header__message-icon svg {
   width: 51px;
-  height: 50px;
+  height: 59px;
   transition: all 0.3s ease-in-out;
 }
 .header__message-icon svg path {
@@ -503,19 +483,19 @@ dialog::backdrop {
   padding-left: 18px;
   padding-right: 16px;
 }
-.biography-mobile__skills b {
-  font-family: "Roboto", sans-serif, Arial, sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
-}
 .biography-mobile__skills li {
   font-family: "Roboto", sans-serif, Arial, sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
+}
+.biography-mobile__skills li b {
+  font-family: "Roboto", sans-serif, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
 }
 .biography-mobile__skills-list {
   text-decoration: none;
@@ -524,7 +504,7 @@ dialog::backdrop {
 .biography-mobile__title {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 900;
 }
 .biography-mobile__text {
   display: flex;
@@ -533,7 +513,7 @@ dialog::backdrop {
   font-weight: 300;
   font-size: 30px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -547,7 +527,7 @@ dialog::backdrop {
   font-weight: 400;
   font-size: 64px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   margin-top: 41px;
   margin-bottom: 35px;
   margin-left: 18px;
@@ -632,8 +612,7 @@ dialog::backdrop {
   grid-column-gap: 20px;
   grid-row-gap: 8px;
   padding: 0 15%;
-  position: relative;
-  top: 250px;
+  margin-top: 160px;
 }
 .testimonials__vertical-text {
   position: relative;
@@ -698,7 +677,7 @@ dialog::backdrop {
   color: #000;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  width: 400;
+  width: 400px;
   transition: color 0.3s ease;
 }
 .testimonials__link:hover {
@@ -756,7 +735,7 @@ dialog::backdrop {
   font-weight: 700;
   font-size: 16px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-transform: capitalize;
   flex-wrap: wrap;
   gap: 40px;
@@ -773,7 +752,7 @@ dialog::backdrop {
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   transition: color 0.3s ease;
 }
 .testimonials-mobile__link:hover {
@@ -786,7 +765,7 @@ dialog::backdrop {
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-top: 420px;
+  margin-top: 60px;
 }
 .strong-points__title {
   font-family: "Roboto", sans-serif, Arial, sans-serif;
@@ -833,7 +812,7 @@ dialog::backdrop {
   font-weight: 500;
   font-size: 86px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   vertical-align: bottom;
 }
 .strong-points__items {
@@ -915,7 +894,7 @@ dialog::backdrop {
 .footer__link {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0px;
@@ -991,12 +970,12 @@ dialog::backdrop {
   .footer__title {
     position: absolute;
     white-space: nowrap;
+    height: 30px !important;
     left: 65%;
     margin-top: 1%;
   }
   .footer {
-    position: relative;
-    top: -430px;
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -1013,10 +992,6 @@ dialog::backdrop {
   .designers-section__horizontal-text {
     left: 16px;
     font-size: 18px;
-  }
-  .strong-points {
-    position: relative;
-    top: -300px;
   }
   .designers__image {
     width: 310px;

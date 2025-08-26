@@ -30,7 +30,7 @@
           </li>
           <li class="header__menu-item"><a href="#points">Strong points</a></li>
         </ul>
-        <li class="header__message-icon" id="openDialog">
+        <div class="header__message-icon" id="openDialog">
           <svg
             width="51"
             height="50"
@@ -41,11 +41,11 @@
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
-              d="M11.5743 40C11.4669 40 11.252 40 11.1446 39.8889C10.7149 39.6667 10.5 39.3333 10.5 38.8889V20C10.5 14.4444 14.7972 10 20.1686 10H30.9116C36.283 10 40.5802 14.4444 40.5802 20V24.4444C40.5802 30 36.283 34.4444 30.9116 34.4444H25.8624C20.9206 34.4444 16.0863 36.3333 12.3263 39.7778C12.1114 39.8889 11.7892 40 11.5743 40ZM25.8624 32.9444C20.8352 32.9444 15.925 34.7581 12 38.0679V20C12 15.2248 15.6728 11.5 20.1686 11.5H30.9116C35.4074 11.5 39.0802 15.2248 39.0802 20V24.4444C39.0802 29.2196 35.4074 32.9444 30.9116 32.9444H25.8624ZM21.5294 23.2353C22.2604 23.2353 22.8529 22.6427 22.8529 21.9118C22.8529 21.1808 22.2604 20.5882 21.5294 20.5882C20.7984 20.5882 20.2059 21.1808 20.2059 21.9118C20.2059 22.6427 20.7984 23.2353 21.5294 23.2353ZM27.2647 21.9118C27.2647 22.6427 26.6721 23.2353 25.9412 23.2353C25.2102 23.2353 24.6176 22.6427 24.6176 21.9118C24.6176 21.1808 25.2102 20.5882 25.9412 20.5882C26.6721 20.5882 27.2647 21.1808 27.2647 21.9118ZM30.3529 23.2353C31.0839 23.2353 31.6765 22.6427 31.6765 21.9118C31.6765 21.1808 31.0839 20.5882 30.3529 20.5882C29.622 20.5882 29.0294 21.1808 29.0294 21.9118C29.0294 22.6427 29.622 23.2353 30.3529 23.2353Z"
+              d="M11.5743 40C11.4669 40 11.252 40 11.1446 39.8889C10.7149 39.6667 10.5 39.3333 10.5 38.8889V20C11.5 14.4444 14.7972 10 20.1686 10H30.9116C36.283 10 40.5802 14.4444 40.5802 20V24.4444C40.5802 30 36.283 34.4444 30.9116 34.4444H25.8624C20.9206 34.4444 16.0863 36.3333 12.3263 39.7778C12.1114 39.8889 11.7892 40 11.5743 40ZM25.8624 32.9444C20.8352 32.9444 15.925 34.7581 12 38.0679V20C12 15.2248 15.6728 11.5 20.1686 11.5H30.9116C35.4074 11.5 39.0802 15.2248 39.0802 20V24.4444C39.0802 29.2196 35.4074 32.9444 30.9116 32.9444H25.8624ZM21.5294 23.2353C22.2604 23.2353 22.8529 22.6427 22.8529 21.9118C22.8529 21.1808 22.2604 20.5882 21.5294 20.5882C20.7984 20.5882 20.2059 21.1808 20.2059 21.9118C20.2059 22.6427 20.7984 23.2353 21.5294 23.2353ZM27.2647 21.9118C27.2647 22.6427 26.6721 23.2353 25.9412 23.2353C25.2102 23.2353 24.6176 22.6427 24.6176 21.9118C24.6176 21.1808 25.2102 20.5882 25.9412 20.5882C26.6721 20.5882 27.2647 21.1808 27.2647 21.9118ZM30.3529 23.2353C31.0839 23.2353 31.6765 22.6427 31.6765 21.9118C31.6765 21.1808 31.0839 20.5882 30.3529 20.5882C29.622 20.5882 29.0294 21.1808 29.0294 21.9118C29.0294 22.6427 29.622 23.2353 30.3529 23.2353Z"
               fill="black"
             />
           </svg>
-        </li>
+        </div>
       </nav>
 
       <dialog id="myDialog">
@@ -78,7 +78,11 @@
                   required
                   aria-required="true"
                 />
-                <img class="icon__img" src="./assets/images/svs.svg" />
+                <img
+                  class="icon__img"
+                  src="./assets/images/svs.svg"
+                  alt="icon"
+                />
               </div>
             </div>
 
@@ -93,7 +97,11 @@
                   required
                   aria-required="true"
                 />
-                <img class="icon__img" src="./assets/images/icon mail.svg" />
+                <img
+                  class="icon__img"
+                  src="./assets/images/icon_mail.svg"
+                  alt="icon"
+                />
               </div>
             </div>
 
@@ -109,7 +117,11 @@
                   required
                   aria-required="true"
                 ></textarea>
-                <img class="icon__img" src="./assets/images/massege.svg" />
+                <img
+                  class="icon__img"
+                  src="./assets/images/massege.svg"
+                  alt="icon"
+                />
               </div>
             </div>
           </fieldset>
@@ -152,7 +164,9 @@
         <div class="biography-mobile__top">
           <div class="biography-mobile__skills">
             <ul class="biography-mobile__skills-list">
-              <b class="biography-mobile__skills-title">Art Director</b>
+              <li class="biography-mobile__skills-item-title">
+                <b>Art Director</b>
+              </li>
               <li class="biography-mobile__skills-item">-Scenography</li>
               <li class="biography-mobile__skills-item">-Styling</li>
               <li class="biography-mobile__skills-item">
@@ -175,7 +189,7 @@
         />
       </section>
       <section id="designers" class="designers-section">
-        <span class="designers-section__horizontal-text">Designers</span>
+        <h3 class="designers-section__horizontal-text">Designers</h3>
         <div class="designers">
           <div class="designers__inner">
             <div class="designers__card designers__card--type2">
@@ -273,7 +287,7 @@
           alt="cafe"
           class="testimonials__cafe-image"
         />
-        <span class="testimonials__vertical-text">Testimonials</span>
+        <h3 class="testimonials__vertical-text">Testimonials</h3>
         <div class="testimonials__opinion-block">
           <blockquote class="testimonials__opinion-text">
             I just really want to do good work, and work with some great people,
@@ -289,7 +303,7 @@
 
       <section class="testimonials-mobile">
         <div class="testimonials-mobile__text-container">
-          <span class="testimonials-mobile__span">Testimonials</span>
+          <h3 class="testimonials-mobile__span">Testimonials</h3>
         </div>
         <div class="testimonials-mobile__inner">
           <div class="testimonials-mobile__opinion-block">
@@ -382,6 +396,6 @@
         </p>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
-  <script src="./script.js"></script>
 </html>
