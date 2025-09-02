@@ -1003,7 +1003,17 @@ dialog::backdrop {
     }
   }
 }
-
+.mobile__title {
+  color: $color-white;
+  display: flex;
+  white-space: nowrap;
+  gap: 6px;
+  align-items: flex-start;
+  span {
+    position: relative;
+    top: 6px;
+  }
+}
 // Media queries
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .strong-points__inner {
